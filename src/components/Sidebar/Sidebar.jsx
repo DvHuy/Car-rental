@@ -1,0 +1,47 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import navLinks from "../../assets/dummy-data/navLinks";
+import "./sidebar.css";
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar">
+      <div className="sidebar__top">
+        <h2>
+          <span>
+            <i class="ri-taxi-line"></i>
+          </span>{" "}
+          UberX
+        </h2>
+      </div>
+      <div className="sidebar__content">
+        <div className="menu">
+          <ul className="nav__list">
+            <div className="nav__item">
+              {navLinks.map((item, index) => (
+                <li>
+                  <NavLink
+                    to={item.path}
+                    className={(navClass) =>
+                      navClass.isActive ? "nav__active nav__link" : "nav__link"
+                    }
+                  >
+                    <i class={item.icon}></i>
+                    {item.display}
+                  </NavLink>
+                </li>
+              ))}
+            </div>
+          </ul>
+        </div>
+        <div className="sidebar__bottom">
+          <span>
+            <i class="ri-logout-circle-r-line"></i>Log out
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Sidebar;
