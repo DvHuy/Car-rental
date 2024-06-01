@@ -14,7 +14,7 @@ const Router = () => {
         element={<Navigate to="/dashboard" element={<Dashboard />} />}
       />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/booking" element={<Bookings />} />
+      <Route path="/bookings" element={<Bookings />} />
       <Route path="/sell-car" element={<SellCar />} />
       <Route path="/settings" element={<Settings />} />
     </Routes>
