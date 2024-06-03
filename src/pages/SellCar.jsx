@@ -36,8 +36,7 @@ const SellCar = () => {
               <div className="box__01">
                 <h2 className="client__name">Killian James</h2>
                 <h6 className="avg__price">
-                  $16,605
-                  <span>average price</span>
+                  $16,605 <span>average price</span>
                 </h6>
                 <h6 className="market__price">Market average is $16,244</h6>
                 <span className="arrow__key">
@@ -85,8 +84,7 @@ const SellCar = () => {
               <div className="box__01">
                 <h2 className="client__name">John Doe</h2>
                 <h6 className="avg__price">
-                  $11,605
-                  <span>average price</span>
+                  $11,605 <span>average price</span>
                 </h6>
                 <h6 className="market__price">Market average is $11,244</h6>
                 <span className="arrow__key">

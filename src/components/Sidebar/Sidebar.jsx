@@ -17,8 +17,8 @@ const Sidebar = () => {
       <div className="sidebar__content">
         <div className="menu">
           <ul className="nav__list">
-            <div className="nav__item">
-              {navLinks.map((item, index) => (
+            
+            {navLinks.map((item, index) => (
                 <li>
                   <NavLink
                     to={item.path}
@@ -31,7 +31,6 @@ const Sidebar = () => {
                   </NavLink>
                 </li>
               ))}
-            </div>
           </ul>
         </div>
         <div className="sidebar__bottom">
