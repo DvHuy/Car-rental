@@ -15,7 +15,7 @@ const Bookings = () => {
               <option value="Upcoming">Upcoming</option>
             </select>
           </div>
-          <div className="filter__widget-02">
+          <div className="filter__widget-01">
             <select>
               <option value="toyota">Toyota</option>
               <option value="bmw">BMW</option>
